@@ -17,10 +17,9 @@ p str.gsub(/難しいんだ/,"簡単なんだ").gsub(/難しい/,"簡単だ")
 #prac3
 
 def word_capitalize(str)
-  str.split(/\-/)
-  #str.split(/\-/).collect do |w|
-  #  w.capitalize
-  #end.join('-')
+  str.split(/\-/).collect do |w|
+    w.capitalize
+  end.join('-')
 end
 
 p word_capitalize("test-aappp-fjoeia-few")
